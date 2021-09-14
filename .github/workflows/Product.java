@@ -14,7 +14,7 @@ public class Product {
         System.out.println("pname:"+this.pname);
         System.out.println("price:"+this.price);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) {{
         Product p1 = new Product();
          p1.pcode = "Phone1";
         p1.pname = " Samsung Galaxy S20";
@@ -36,5 +36,5 @@ public class Product {
         Product p = p3.price < (p1.price < p2.price ? p1.price : p2.price) ? p3 : (p1.price < p2.price ? p1 : p2);
         System.out.println("\n****Product with lowest price****");
         p.display();
-    }
+    }}
 }
