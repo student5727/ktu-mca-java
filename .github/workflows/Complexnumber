@@ -1,0 +1,29 @@
+import java.io.*;
+class Complexnumber
+{
+  int real1,imag1,real2,imag2;
+ 
+ void get() throws IOException
+  {
+      BufferedReader Br = new BufferedReader(new InputStreamReader(System.in));
+     System.out.print("\n Enter the real part of first complex number: ");
+     real1=Integer.parseInt(Br.readLine());
+  System.out.print(" Enter the imaginary part of first complex number: ");
+     imag1=Integer.parseInt(Br.readLine());
+  System.out.print("\n Enter the real part of second complex number: ");
+     real2=Integer.parseInt(Br.readLine());
+  System.out.print(" Enter the imaginary part of second complex number :  ");
+     imag2=Integer.parseInt(Br.readLine());
+  }
+void display()
+  {   
+      System.out.println(" \n Sum of complex numbers " + real1 + "+" + imag1 + "i and "  + real2 + "+" + imag2 + "i is " + (real1+real2) + "+" + (imag1+imag2) + "i");
+  }
+ 
+public static void main(String p[]) throws IOException
+ {
+   Complexnumber cmp = new Complexnumber();
+   cmp.get();
+   cmp.display();
+ }
+}
